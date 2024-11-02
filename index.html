@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+
+        <nav>
+            <a href="#"><img src="logo.png"></a>
+            <div class="nav-link" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="menu" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Borrow and Lend Book Easy</h1>
+            <p>We provide readers with a diverse selection of books,<br> nurturing curiosity, knowledge, and a passion for learning.</p>
+            <a href="#" class="text-box-1">Search</a>
+        </div>
+
+    </section>
+
+    <!-- COURSES -->
+
+    <section class="courses">
+       <h1>Genres</h1>
+       <p>University stands as a beacon where academic prowess meets dedicated service.</p>
+
+       <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>It's professional programs are academically rich and provide the experiences that propel students to succeed in their careers.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Offering a diverse suite of degrees and programs , our Graduate Schools prepares student to seek truth and knowledge in their academic endeavors . </p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>It is one of the world's most prestigious destination for undergraduate education in a wide range of studies.</p>
+        </div>
+
+       </div>
+    </section>   
+
+       <!-- CAMPUS -->
+
+       <section class="campus"> 
+            <h1>Our Global Campus</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src="london.png">
+                    <div class="layer">
+                        <h3>LONDON</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="newyork.png">
+                    <div class="layer">
+                        <h3>NEWYORK</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="washington.png">
+                    <div class="layer">
+                        <h3>WASHINGTON</h3>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- FACILITIES -->
+
+       <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Our goal is to maintain a learning and working environment that is comfortable, safe, and enjoyable.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="library.png">
+                <h3>World Class Library</h3>
+                <p>Library conducts orientation programmes for new users. beginning of the year. It is to enable them to use library resources effectively.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>n basketball, the basketball court is the playing surface, consisting of a rectangular floor, with baskets at each end.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Cafeteria offers breakfast, lunches and a range of snacks and bakery items for morning and afternoon tea.</p>
+            </div>
+        </div>
+       </section>
+
+       <!-- TESTIMONIALS -->
+        <section class="testimonial">
+            <h1>What Our Student Says</h1>
+            <p></p>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="user1.jpg">
+                    <div>
+                        <p>Book Heaven is the perfect way to order from home.They have been there for many years serving readers,a nd they have the perfect book for me. I highly recommenf them.</p>
+                        <h3>Christine Berkley</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="user2.jpg">
+                    <div>
+                        <p>Book Heaven has been a staple for me. I'm an avid reader, and I often find myself short on time to go library. Book Heaven allows me to order books from home, and they have a great selection. They've been there for many years serving readers, and I'm glad they're around.</p>
+                        <h3>David Byer</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+
+        <section class="cta">
+              <h1>Enroll For Our Various Online Courses <br>Anywhere From The World</h1>
+              <a href="#" class="text-box-1">CONTACT US</a>
+        </section>
+
+
+
+
+
+    
+
+
+
+
+
+
+    <!-- JAVASCRIPT for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+</body>
+</html>
